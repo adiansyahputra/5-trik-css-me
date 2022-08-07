@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Clipping</title>
+        <!-- https://bennettfeely.com/clippy/ -->
+        <style>
+            img {
+                /* clip-path: inset(100px 100px 10px 50px); */
+                /* clip-path: circle(50px); */
+                /* clip-path: ellipse(100px 200px); */
+                /* clip-path: polygon(0 0, 150px 150px, 300px 300px, 0 600px); */
+                /* clip-path: polygon(0 0, 100% 0, 50% 100%); */
+                clip-path: polygon(38% 76%, 79% 23%, 40% 10%, 23% 38%, 25% 62%, 54% 83%, 87% 69%, 85% 32%, 81% 27%, 84% 23%, 76% 7%, 54% 7%, 19% 91%);
+            }
+            h1 {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 60px;
+                text-align: center;
+                background-image: url(img/1.png);
+                background-attachment: fixed;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="img/1.png" alt="Coba" />
+        <h1>Web Programming UNPAS</h1>
+    </body>
+</html>
